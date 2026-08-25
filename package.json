@@ -1,0 +1,25 @@
+{
+  "name": "holiday",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "nuxt": "^3.2.3",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.23.0",
+    "tailwindcss": "^3.2.7"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.5.6": true,
+    "esbuild@0.28.2": true
+  }
+}

@@ -17,6 +17,8 @@
       :disabled="disabled"
       :placeholder="placeholder"
       :value="inputValue"
+      :min="min"
+      :max="max"
       ref="input">
     </div>
 
@@ -36,7 +38,9 @@
       centerText: {
         default: false,
         type: Boolean
-      }
+      },
+      min: Number,
+      max: Number
     },
 
     data() {

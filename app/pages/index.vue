@@ -54,7 +54,7 @@
                     SECURE A SLOT
                     <ArrowRight :size="20" class="ml-2" />
                 </button>
-                <span class="text-sm -mt-2">Limited Slots Available</span>
+                <span class="text-sm block mt-2">Limited Slots Available</span>
             </div>
 
         </div>
@@ -147,7 +147,7 @@
         <Container class="py-16 grid lg:grid-cols-2 gap-6 items-center">
             <Forms />
             <div class="space-y-6">
-                <img src="/images/image.webp" class="aspect-[5/3] rounded-2xl object-cover" alt="Image of a young black biy smiling while using a laptop"/>
+                <img src="/images/image.webp" class="aspect-[5/3] rounded-2xl object-cover hidden md:block" alt="Image of a young black biy smiling while using a laptop"/>
 
                 <div class="rounded-2xl border border-neutral-200 p-5 flex gap-5">
                     <Headset :size="28" color="#058182" />

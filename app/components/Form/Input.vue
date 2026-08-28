@@ -17,6 +17,7 @@
       :disabled="disabled"
       :placeholder="placeholder"
       :value="inputValue"
+      :required="required"
       :min="min"
       :max="max"
       ref="input">
@@ -34,6 +35,7 @@
       inputValue: String,
       type: String,
       disabled: Boolean,
+      required: Boolean,
       placeholder:String,
       centerText: {
         default: false,

@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="pt-4">
-                <button class="bg-secondary text-white px-6 py-3 rounded flex items-center gap-1 hover:bg-primary transition gover:gap-2 duration-200 mt-8">
+                <button @click="openDialog" class="bg-secondary text-white px-6 py-3 rounded flex items-center gap-1 hover:bg-primary transition gover:gap-2 duration-200 mt-8">
                     SECURE A SLOT
                     <ArrowRight :size="20" class="ml-2" />
                 </button>
@@ -166,9 +166,48 @@
         </Container>
     </section>
 
+
+    <dialog ref="enrollmentDialog" class="enrollment-dialog" @click="handleDialogClick">
+        <button
+            type="button"
+            class="absolute right-4 top-4 z-10 text-2xl leading-none text-neutral-500 hover:text-neutral-900"
+            aria-label="Close enrollment form"
+            @click="closeDialog"
+        >
+            <X :size="24" color="#058182"/>
+        </button>
+        <Forms />
+    </dialog>
 </template>
 <script setup>
-import { GraduationCap, Banknote, Calendar, Clock5, Users, ArrowRight, Code, Globe, Bot, Lightbulb, MonitorSmartphone, MapPin, CalendarCheck, Tag, Headset, Phone } from '@lucide/vue';
+import { GraduationCap, Banknote, Calendar, Clock5, Users, ArrowRight, Code, Globe, Bot, Lightbulb, MonitorSmartphone, MapPin, CalendarCheck, Tag, Headset, Phone, X } from '@lucide/vue';
+
+const enrollmentDialog = ref(null)
+let dialogTimer
+
+const openDialog = () => {
+    enrollmentDialog.value?.showModal()
+}
+
+const closeDialog = () => {
+    enrollmentDialog.value?.close()
+}
+
+const handleDialogClick = (event) => {
+    if (event.target === event.currentTarget) {
+        closeDialog()
+    }
+}
+
+onMounted(() => {
+    dialogTimer = window.setTimeout(() => {
+        openDialog()
+    }, 5000)
+})
+
+onBeforeUnmount(() => {
+    window.clearTimeout(dialogTimer)
+})
 </script>
 <style>
 body {
@@ -182,5 +221,19 @@ body {
     display: inline-block;
     transform: scaleX(-1);
     transform-origin: center;
+}
+
+.enrollment-dialog {
+    position: fixed;
+    width: min(90vw, 36rem);
+    max-height: 90vh;
+    padding: 0;
+    overflow: auto;
+    border: 0;
+    background: transparent;
+}
+
+.enrollment-dialog::backdrop {
+    background: rgb(10 10 10 / 75%);
 }
 </style>

@@ -118,27 +118,27 @@
         </div>
     </Container>
 
-    <div class="bg-primary py-6">
-        <Container class="flex flex-wrap justify-between items-center">
-            <div class="flex items-center gap-4 text-white/80">
+    <div class="bg-primary py-5">
+        <Container class="grid grid-cols-2 gap-x-6 gap-y-5 sm:grid-cols-3 lg:grid-cols-5 lg:gap-0">
+            <div class="flex min-w-0 items-center gap-3 text-white/80">
                 <Calendar :size="22" color="white"/>
-                <span classs="text-sm">Duration: 2 Weeks</span>
+                <span class="text-sm">Duration: 2 Weeks</span>
             </div>
-            <div class="flex items-center gap-4 text-white/80">
+            <div class="flex min-w-0 items-center gap-3 border-white/25 text-white/80 lg:border-l lg:pl-6">
                 <CalendarCheck :size="22" color="white"/>
-                <span classs="text-sm">Schedule: 4 Days/Week</span>
+                <span class="text-sm">Schedule: 4 Days/Week</span>
             </div>
-            <div class="flex items-center gap-4 text-white/80">
+            <div class="flex min-w-0 items-center gap-3 border-white/25 text-white/80 lg:border-l lg:pl-6">
                 <MapPin :size="22" color="white"/>
-                <span classs="text-sm">Mode: Physical</span>
+                <span class="text-sm">Mode: Physical</span>
             </div>
-            <div class="flex items-center gap-4 text-white/80">
+            <div class="flex min-w-0 items-center gap-3 border-white/25 text-white/80 lg:border-l lg:pl-6">
                 <Users :size="22" color="white"/>
-                <span classs="text-sm">Ages: 8-17</span>
+                <span class="text-sm">Ages: 8-17</span>
             </div>
-            <div class="flex items-center gap-4 text-white/80">
+            <div class="flex min-w-0 items-center gap-3 border-white/25 text-white/80 lg:border-l lg:pl-6">
                 <Tag :size="22" color="white"/>
-                <span classs="text-sm">Price: &#8358;25,000</span>
+                <span class="text-sm">Price: &#8358;25,000</span>
             </div>
         </Container>
     </div>

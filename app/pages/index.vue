@@ -200,12 +200,14 @@ const handleDialogClick = (event) => {
 }
 
 onMounted(() => {
+    window.addEventListener('open-enrollment-dialog', openDialog)
     dialogTimer = window.setTimeout(() => {
         openDialog()
     }, 5000)
 })
 
 onBeforeUnmount(() => {
+    window.removeEventListener('open-enrollment-dialog', openDialog)
     window.clearTimeout(dialogTimer)
 })
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="select-none" :style="{ '--navbar-height': `${navbarHeight}px` }">
     <NavigationNavBar class="z-150" @height-change="handleNavbarHeightChange" />
-    <div class="w-full min-h-screen lg:pt-[var(--navbar-height)]">
+    <div class="w-full min-h-screen pt-[var(--navbar-height)]">
       <slot />
     </div>
     <NavigationFooter />

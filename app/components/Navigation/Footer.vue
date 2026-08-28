@@ -1,91 +1,50 @@
 <template>
-  <footer class="bg-primary-dark py-16">
+  <footer class="bg-primary-dark py-12">
     <Container>
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-        <div>
-          <div class="w-36 mb-4">
-            <NavigationLogo class="text-primary" />
+      <div class="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+        <div class="max-w-md">
+          <div class="mb-4 w-36">
+            <NavigationLogo class="text-primary-light" />
           </div>
-          <p class="text-base text-gray-400">
-            Breathing new life into brands.
-            Award-winning specialists in digital
-            storytelling.
+          <h5 class="text-2xl text-white/80">Build something brilliant this holiday.</h5>
+          <p class="mt-3 text-base text-gray-400">
+            A hands-on digital skills programme for curious young minds.
           </p>
-
-          <div class="mt-6 flex gap-6">
-            <NuxtLink class="bg-white/10 hover:bg-white/25 ease-in-out duration-200 w-10 h-10 rounded-full grid place-content-center">
-              <Share2 color="white" :size="18" />
-            </NuxtLink>
-            <NuxtLink class="bg-white/10 hover:bg-white/25 ease-in-out duration-200 w-10 h-10 rounded-full grid place-content-center">
-              <Link2 color="white" :size="18" />
-            </NuxtLink>
-          </div>
         </div>
 
-        <div>
-          <h6 class="text-base text-primary-light">Company</h6>
-          <ul class="mt-2 space-y-4">
-            <li>
-              <NuxtLink to="/" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">Home</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/about" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">About Us</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/services" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">Services</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/blog" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">Blog</NuxtLink>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h6 class="text-base text-primary-light">Services</h6>
-          <ul class="mt-2 space-y-4">
-            <li>
-              <NuxtLink to="/" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">Branding</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/about" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">Web Design</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/services" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">Marketing</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/blog" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">SEO Strategy</NuxtLink>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h6 class="text-base text-primary-light m-0">Location</h6>
-          <p class="my-4 text-gray-400">
-            Sidolink filling station, Agunbelewo along Oyo road,<br/>
-            Iwo, Osun state, Nigeria
-          </p>
-          <NuxtLink
-            to="mailto:contact@addeddigital.com"
-            class="block max-w-full truncate text-primary-light font-bold transition duration-200 ease-in-out hover:text-white"
+        <div class="flex flex-col items-start gap-4 sm:items-end">
+          <button
+            type="button"
+            class="rounded bg-secondary px-5 py-3 font-semibold text-white transition duration-200 ease-in-out hover:bg-white hover:text-secondary"
+            @click="requestEnrollment"
           >
-            contact@addeddigital.com
-          </NuxtLink>
+            SECURE A SLOT
+          </button>
+          <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            <a href="mailto:contact@addeddigital.com" class="text-gray-400 transition duration-200 ease-in-out hover:text-primary-light">
+              contact@addeddigital.com
+            </a>
+            <a href="https://addeddigital.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-gray-400 transition duration-200 ease-in-out hover:text-primary-light">
+              Visit Addeddigital.com
+              <ExternalLink :size="14" />
+            </a>
+          </div>
         </div>
       </div>
 
       <div class="my-6 h-[1px] bg-primary-light/25"></div>
 
-      <div class="flex flex-wrap gap-8 align-items justify-between mt-8">
+      <div class="mt-8 flex flex-wrap justify-between gap-4">
         <p class="text-sm text-gray-400">&copy; {{ new Date().getFullYear() }} Added Digital Solutions. All rights reserved.</p>
-
-        <div class="flex gap-6">
-          <NuxtLink to="/privacy-policy" class="text-gray-400 hover:text-primary-light ease-in-out duration-200 text-sm">Privacy Policy</NuxtLink>
-          <NuxtLink to="/terms-of-service" class="text-gray-400 hover:text-primary-light ease-in-out duration-200 text-sm">Terms of Service</NuxtLink>
-        </div>
+        <p class="text-sm text-gray-400">Powered by Added Digital Solutions</p>
       </div>
     </Container>
   </footer>
 </template>
 <script setup lang="ts">
-import { Share2, Link2 } from '@lucide/vue'
+import { ExternalLink } from '@lucide/vue'
+
+const requestEnrollment = () => {
+  window.dispatchEvent(new CustomEvent('open-enrollment-dialog'))
+}
 </script>

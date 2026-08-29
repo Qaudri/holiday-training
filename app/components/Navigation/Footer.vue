@@ -24,6 +24,9 @@
             <a href="mailto:contact@addeddigital.com" class="text-gray-400 transition duration-200 ease-in-out hover:text-primary-light">
               contact@addeddigital.com
             </a>
+            <a href="https://wa.me/2349036049992" target="_blank" rel="noopener noreferrer" class="text-gray-400 transition duration-200 ease-in-out hover:text-primary-light">
+              WhatsApp: 09036049992
+            </a>
             <a href="https://addeddigital.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-gray-400 transition duration-200 ease-in-out hover:text-primary-light">
               Visit Addeddigital.com
               <ExternalLink :size="14" />

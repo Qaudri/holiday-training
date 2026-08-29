@@ -12,8 +12,31 @@
         <p class="mt-8 text-sm font-bold uppercase tracking-[0.25em] text-secondary">Reservation received</p>
         <UiTypographyH1 class="mt-3 text-4xl sm:text-6xl">YOU'RE ON THE LIST!</UiTypographyH1>
         <UiTypographyP class="mx-auto mt-5 max-w-lg text-neutral-600">
-          Thanks for reserving a place in our holiday coding programme. Our enrollment team will contact you shortly to confirm your child's slot.
+          Thanks for reserving a place in our holiday coding programme. Complete your enrollment by making the payment below.
         </UiTypographyP>
+
+        <div class="mx-auto mt-10 max-w-md rounded-2xl border-2 border-secondary/30 bg-secondary/5 p-6">
+          <h3 class="text-lg font-semibold text-primary-dark">Payment Details</h3>
+          <div class="mt-4 space-y-3 text-left">
+            <div>
+              <span class="text-xs uppercase tracking-wider text-neutral-500">Account Number</span>
+              <p class="mt-1 font-mono text-lg font-bold text-primary">6359339876</p>
+            </div>
+            <div>
+              <span class="text-xs uppercase tracking-wider text-neutral-500">Bank</span>
+              <p class="mt-1 font-semibold text-primary-dark">Moniepoint</p>
+            </div>
+            <div>
+              <span class="text-xs uppercase tracking-wider text-neutral-500">Account Name</span>
+              <p class="mt-1 font-semibold text-primary-dark">Added Digital Solutions</p>
+            </div>
+          </div>
+          <div class="mt-5 rounded-lg bg-white p-3">
+            <p class="text-sm text-neutral-600">
+              <span class="font-semibold">📱 After payment,</span> send a screenshot of your receipt to <a href="https://wa.me/2349036049992" target="_blank" rel="noopener noreferrer" class="font-semibold text-primary hover:text-secondary transition">09036049992</a> on WhatsApp to complete your enrollment.
+            </p>
+          </div>
+        </div>
 
         <div class="mx-auto mt-8 grid max-w-md grid-cols-2 gap-3 text-left">
           <div class="rounded-lg bg-neutral-50 p-4">
@@ -22,7 +45,7 @@
           </div>
           <div class="rounded-lg bg-neutral-50 p-4">
             <span class="text-xs uppercase tracking-wider text-neutral-500">Next step</span>
-            <p class="mt-1 font-semibold text-primary-dark">Watch your inbox</p>
+            <p class="mt-1 font-semibold text-primary-dark">Send receipt via WhatsApp</p>
           </div>
         </div>
 
@@ -31,7 +54,7 @@
           <ArrowRight :size="18" />
         </NuxtLink>
         <p class="mt-5 text-sm text-neutral-500">
-          Questions? <a href="tel:09036049992" class="font-semibold text-primary hover:text-secondary">09036049992</a>
+          Questions? <a href="https://wa.me/2349036049992" target="_blank" rel="noopener noreferrer" class="font-semibold text-primary hover:text-secondary transition">Chat on WhatsApp</a>
         </p>
       </section>
     </Container>

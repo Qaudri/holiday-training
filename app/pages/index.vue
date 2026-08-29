@@ -6,7 +6,7 @@
                 Ages 8-17
             </span>
             <UiTypographyH1>
-                &lt;CODE<span class="heading slash-flip">\</span>&gt;<br> THIS HOLIDAY!
+                <span class="heading text-primary">&lt;</span>CODE<span class="heading slash-flip text-primary">\</span><span class="text-primary heading">&gt;</span><br> THIS HOLIDAY!
             </UiTypographyH1>
             <UiTypographyP>
                 Turn your child's holiday into a season of creativity, coding & digital skills.
@@ -18,7 +18,7 @@
                     </div>
                     <div>
                         <span class="text-sm">Price</span>
-                        <h6 class="text-secondary text-lg font-medium">&#8358;25,000</h6>
+                        <h6 class="text-secondary text-base font-medium">&#8358;25,000</h6>
                     </div>
                 </div>
                 <div class="p-4 rounded-lg flex items-center gap-4 bg-white border border-neutral-200">
@@ -27,7 +27,7 @@
                     </div>
                     <div>
                         <span class="text-sm">Duration</span>
-                        <h6 class="text-lg font-medium">2 Weeks</h6>
+                        <h6 class="text-base font-medium">2 Weeks</h6>
                     </div>
                 </div>
                 <div class="p-4 rounded-lg flex items-center gap-4 bg-white border border-neutral-200">
@@ -36,7 +36,7 @@
                     </div>
                     <div>
                         <span class="text-sm">Schedule</span>
-                        <h6 class="text-lg font-medium">4 Days/Week</h6>
+                        <h6 class="text-base font-medium">4 Days/Week</h6>
                     </div>
                 </div>
                 <div class="p-4 rounded-lg flex items-center gap-4 bg-white border border-neutral-200">
@@ -45,7 +45,7 @@
                     </div>
                     <div>
                         <span class="text-sm">Mode</span>
-                        <h6 class="text-lg font-medium">Physical</h6>
+                        <h6 class="text-base font-medium">Physical</h6>
                     </div>
                 </div>
             </div>

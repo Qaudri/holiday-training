@@ -6,10 +6,13 @@
                 Ages 8-17
             </span>
             <UiTypographyH1>
-                <span class="heading text-primary">&lt;</span>CODE<span class="heading slash-flip text-primary">\</span><span class="text-primary heading">&gt;</span><br> THIS HOLIDAY!
+                NEXTGEN<br></br>
+                <span class="heading text-primary">&lt;</span>CODING<span class="heading slash-flip text-primary">\</span><span class="text-primary heading">&gt;</span>
+                <br>
+                <span class="ribbon-badge heading">BOOTCAMP</span>
             </UiTypographyH1>
             <UiTypographyP>
-                Turn your child's holiday into a season of creativity, coding & digital skills.
+                Don't just prepare your child for the future. Let them create it.
             </UiTypographyP>
             <div class="grid grid-cols-2 gap-4">
                 <div class="p-4 rounded-lg flex items-center gap-4 bg-white border border-neutral-200">
@@ -223,6 +226,23 @@ body {
     display: inline-block;
     transform: scaleX(-1);
     transform-origin: center;
+}
+
+.ribbon-badge {
+    display: inline-block;
+    position: relative;
+    min-width: 7.5rem;
+    padding: 0.55rem 1.5rem 0.7rem;
+    background-image: url('/images/ribbon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    transform: translateY(-0.2rem);
 }
 
 .enrollment-dialog {
